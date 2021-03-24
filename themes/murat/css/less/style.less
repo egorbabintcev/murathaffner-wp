@@ -583,6 +583,10 @@ a, button {
     width: 1170px;
     float: none;
     margin: 0 auto;
+
+    @media screen and (max-width: 480px) {
+      width: 100vw;
+    }
 }
 
 body {
@@ -601,7 +605,13 @@ body {
 }
 
 body {
-    .header_main .wrap_float {padding: 110px 0;}
+    .header_main .wrap_float {
+      padding: 110px 0;
+
+      @media screen and (max-width: 480px) {
+        padding: 30px 15px;
+      }
+    }
 
     .header_main.header_page .wrap_float {
         padding: 55px 0;
@@ -672,6 +682,14 @@ body {
             padding: 25px 0 46px;
             box-sizing: border-box;
             position: relative;
+
+            @media screen and (max-width: 480px) {
+              align-items: center;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              padding: 15px 15px 25px;
+            }
         }
 
         &:before {
@@ -700,13 +718,17 @@ body {
             width: 40%;
 
             .logo {
-                display: block;
-                float: left;
-                width: 140px;
-                height: 41px;
-                background: url(../img/logo.png) center center no-repeat;
-                background-size: contain;
-                margin-right: 20px;
+              display: block;
+              float: left;
+              width: 140px;
+              height: 41px;
+              margin-right: 20px;
+              background: url(../img/logo.png) center center no-repeat;
+              background-size: contain;
+
+              @media screen and (max-width: 480px) {
+                margin-right: 0;
+              }
             }
 
             .text {
@@ -715,6 +737,10 @@ body {
                 font-size: 13px;
                 margin-top: 2px;
                 line-height: 1.5;
+
+                @media screen and (max-width: 480px) {
+                  display: none;
+                }
             }
         }
 
@@ -733,6 +759,10 @@ body {
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd9a1a', endColorstr='#f8ce5c',GradientType=1 ); /* IE6-9 */
                 margin-right: 17px;
                 position: relative;
+
+                @media screen and (max-width: 480px) {
+                  display: none;
+                }
 
                 &:before {
                     width: 12px;
@@ -774,6 +804,10 @@ body {
                     box-sizing: border-box;
                     border-bottom: 1px solid #fd9a19;
 
+                    @media screen and (max-width: 480px) {
+                      font-size: 16px;
+                    }
+
                     &:hover {
                         color: #fd7a19;
                         border-color: #fd7a19;
@@ -786,6 +820,10 @@ body {
             position: absolute;
             bottom: -37px;
             left: 0;
+
+            @media screen and (max-width: 480px) {
+              display: none;
+            }
 
             & > li {
                 margin-right: 40px;
@@ -954,6 +992,12 @@ body {
                 margin-bottom: 55px;
                 line-height: 1.28;
 
+                @media screen and (max-width: 480px) {
+                  font-size: 32px;
+                  margin-bottom: 30px;
+                  text-align: center;
+                }
+
                 b, strong {
                     font-weight: 100;
                     font-family: _Bold;
@@ -967,6 +1011,12 @@ body {
                 clear: both;
                 padding-top: 30px;
                 box-sizing: border-box;
+
+                @media screen and (max-width: 480px) {
+                  margin-bottom: 50px;
+                  margin-right: 0;
+                  width: 100%;
+                }
 
                 &_p {
                     font-size: 21px;
@@ -1000,6 +1050,12 @@ body {
                     margin-top: 24px;
                     transition: none;
 
+                    @media screen and (max-width: 480px) {
+                      line-height: 100%;
+                      padding-right: 70px;
+                      width: 90%;
+                    }
+
                     &:after {
                         width: 125px;
                         height: 118px;
@@ -1029,6 +1085,12 @@ body {
                 padding: 32px;
                 width: 500px;
                 padding-right: 90px;
+
+                @media screen and (max-width: 480px) {
+                  padding: 16px;
+                  padding-right: 20px;
+                  width: 100%;
+                }
 
                 li {
                     font-size: 17px;
@@ -1071,6 +1133,10 @@ body {
         }
 
         &_right {
+          @media screen and (max-width: 480px) {
+            display: none;
+          }
+
             img {
                 width: 430px;
                 height: 650px;

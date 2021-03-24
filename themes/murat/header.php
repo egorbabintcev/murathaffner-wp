@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1240">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title('|', true, 'right'); ?></title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <?php wp_head(); ?>
