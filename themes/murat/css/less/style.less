@@ -572,7 +572,8 @@ a, button {
     line-height: 1.25;
 
     @media screen and (max-width: 480px) {
-      font-size: 32px;
+      font-size: 27px;
+      text-align: left;
     }
 }
 
@@ -581,6 +582,10 @@ a, button {
     text-align: center;
     margin-bottom: 24px;
     line-height: 1.4;
+
+    @media screen and (max-width: 480px) {
+      text-align: left;
+    }
 }
 
 .wrap {
@@ -1001,9 +1006,9 @@ body {
                 line-height: 1.28;
 
                 @media screen and (max-width: 480px) {
-                  font-size: 32px;
+                  font-size: 27px;
                   margin-bottom: 30px;
-                  text-align: center;
+                  text-align: left;
                 }
 
                 b, strong {
@@ -1060,7 +1065,7 @@ body {
 
                     @media screen and (max-width: 480px) {
                       line-height: 100%;
-                      padding-right: 70px;
+                      padding-right: 80px;
                       width: 90%;
                     }
 
@@ -1738,6 +1743,10 @@ body {
             position: absolute;
             top: 90px;
             left: -230px;
+
+            @media screen and (max-width: 480px) {
+              display: none;
+            }
         }
 
         .form_div {
@@ -1747,6 +1756,12 @@ body {
             width: 520px;
             padding: 33px 75px 40px;
             box-sizing: border-box;
+
+            @media screen and (max-width: 480px) {
+              margin-right: 0;
+              padding: 33px 15px 40px;
+              width: auto;
+            }
 
             .title {
                 text-align: left;
@@ -1890,6 +1905,12 @@ body {
 .scheme {
     margin-top: 110px;
 
+    @media screen and (max-width: 480px) {
+      box-sizing: border-box;
+      margin-top: 60px;
+      padding: 0 15px;
+    }
+
     .wrap_float {
         position: relative;
 
@@ -1898,6 +1919,10 @@ body {
             top: 0;
             position: absolute;
             height: 100%;
+
+            @media screen and (max-width: 480px) {
+              display: none;
+            }
         }
     }
 
@@ -1906,9 +1931,19 @@ body {
         float: right;
         padding-bottom: 80px;
 
+        @media screen and (max-width: 480px) {
+          float: none;
+          padding-bottom: 30px;
+          width: auto;
+        }
+
         .title {
             text-align: left;
             margin-bottom: 77px;
+
+            @media screen and (max-width: 480px) {
+              margin-bottom: 50px;
+            }
         }
 
         .scheme_ul {
@@ -1920,6 +1955,14 @@ body {
                 font-size: 17px;
                 line-height: 1.5;
                 margin-bottom: 34px;
+
+                @media screen and (max-width: 480px) {
+                  width: auto;
+
+                  &:last-of-type {
+                    margin-bottom: 0;
+                  }
+                }
 
                 a {
                     color: #fd9a19;
@@ -1982,6 +2025,7 @@ body {
                     clear: both;
                 }
             }
+
         }
     }
 }

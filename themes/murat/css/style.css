@@ -525,7 +525,8 @@ button:hover * {
 }
 @media screen and (max-width: 480px) {
   .title {
-    font-size: 32px;
+    font-size: 27px;
+    text-align: left;
   }
 }
 .subtitle {
@@ -533,6 +534,11 @@ button:hover * {
   text-align: center;
   margin-bottom: 24px;
   line-height: 1.4;
+}
+@media screen and (max-width: 480px) {
+  .subtitle {
+    text-align: left;
+  }
 }
 .wrap {
   width: 1170px;
@@ -911,9 +917,9 @@ body .catalog_setion .title {
 }
 @media screen and (max-width: 480px) {
   .header_main_left .header_title {
-    font-size: 32px;
+    font-size: 27px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
   }
 }
 .header_main_left .header_title b,
@@ -975,7 +981,7 @@ body .catalog_setion .title {
 @media screen and (max-width: 480px) {
   .header_main_left .header_catalog_btn {
     line-height: 100%;
-    padding-right: 70px;
+    padding-right: 80px;
     width: 90%;
   }
 }
@@ -1605,6 +1611,11 @@ body .catalog_setion .title {
   top: 90px;
   left: -230px;
 }
+@media screen and (max-width: 480px) {
+  .section_form .wrap_float img {
+    display: none;
+  }
+}
 .section_form .wrap_float .form_div {
   margin-right: 125px;
   float: right;
@@ -1612,6 +1623,13 @@ body .catalog_setion .title {
   width: 520px;
   padding: 33px 75px 40px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+  .section_form .wrap_float .form_div {
+    margin-right: 0;
+    padding: 33px 15px 40px;
+    width: auto;
+  }
 }
 .section_form .wrap_float .form_div .title {
   text-align: left;
@@ -1737,6 +1755,13 @@ body .catalog_setion .title {
 .scheme {
   margin-top: 110px;
 }
+@media screen and (max-width: 480px) {
+  .scheme {
+    box-sizing: border-box;
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+}
 .scheme .wrap_float {
   position: relative;
 }
@@ -1746,14 +1771,31 @@ body .catalog_setion .title {
   position: absolute;
   height: 100%;
 }
+@media screen and (max-width: 480px) {
+  .scheme .wrap_float img {
+    display: none;
+  }
+}
 .scheme .section_content {
   width: 770px;
   float: right;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 480px) {
+  .scheme .section_content {
+    float: none;
+    padding-bottom: 30px;
+    width: auto;
+  }
+}
 .scheme .section_content .title {
   text-align: left;
   margin-bottom: 77px;
+}
+@media screen and (max-width: 480px) {
+  .scheme .section_content .title {
+    margin-bottom: 50px;
+  }
 }
 .scheme .section_content .scheme_ul li {
   width: 370px;
@@ -1763,6 +1805,14 @@ body .catalog_setion .title {
   font-size: 17px;
   line-height: 1.5;
   margin-bottom: 34px;
+}
+@media screen and (max-width: 480px) {
+  .scheme .section_content .scheme_ul li {
+    width: auto;
+  }
+  .scheme .section_content .scheme_ul li:last-of-type {
+    margin-bottom: 0;
+  }
 }
 .scheme .section_content .scheme_ul li a {
   color: #fd9a19;
