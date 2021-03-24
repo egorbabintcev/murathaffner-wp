@@ -541,7 +541,7 @@ button:hover * {
 }
 @media screen and (max-width: 480px) {
   .wrap {
-    width: 100vw;
+    width: 100%;
   }
 }
 body {
@@ -597,6 +597,11 @@ body .catalog_setion .title {
 .container {
   padding-bottom: 100px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
 }
 .header {
   background: url(../img/header.jpg) center center no-repeat;
@@ -1085,6 +1090,11 @@ body .catalog_setion .title {
   letter-spacing: 0.1px;
   transition: none;
 }
+@media screen and (max-width: 480px) {
+  .btn {
+    width: 100%;
+  }
+}
 .btn:hover {
   background: #f8cf5d;
   transition: none;
@@ -1306,6 +1316,13 @@ body .catalog_setion .title {
   background: #f8f9fa;
   padding: 60px 0;
 }
+@media screen and (max-width: 480px) {
+  .map {
+    box-sizing: border-box;
+    padding: 60px 15px;
+    padding-bottom: 80px;
+  }
+}
 .map .map_container {
   width: 1170px;
   height: 451px;
@@ -1314,11 +1331,23 @@ body .catalog_setion .title {
   position: relative;
   margin: 50px 0;
 }
+@media screen and (max-width: 480px) {
+  .map .map_container {
+    height: 160px;
+    margin: 30px 0;
+    width: 100%;
+  }
+}
 .map .map_container .point {
   width: 26px;
   height: 26px;
   border-radius: 50%;
   position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .map .map_container .point {
+    display: none;
+  }
 }
 .map .map_container .point_title {
   font-size: 11px;
@@ -1412,18 +1441,41 @@ body .catalog_setion .title {
 .production {
   padding: 34px 0 110px;
 }
+@media screen and (max-width: 480px) {
+  .production {
+    box-sizing: border-box;
+    padding: 34px 15px 60px;
+  }
+}
 .production .section_content {
   margin: 20px 0;
+}
+@media screen and (max-width: 480px) {
+  .production .section_content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .production_item {
   width: 270px;
   margin-right: 30px;
 }
-.production_item:nth-child(even) {
-  transform: translateY(20px);
+@media screen and (max-width: 480px) {
+  .production_item {
+    margin-right: 0;
+  }
+  .production_item:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
 }
-.production_item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  .production_item:nth-child(even) {
+    transform: translateY(20px);
+  }
+  .production_item:last-child {
+    margin-right: 0;
+  }
 }
 .production_item_img {
   height: 360px;
