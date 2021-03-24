@@ -661,7 +661,6 @@ body {
 }
 
 .container {
-    padding-bottom: 100px;
     box-sizing: border-box;
 
     @media screen and (max-width: 480px) {
@@ -2041,6 +2040,13 @@ body {
             background: #fff;
             position: relative;
 
+            @media screen and (max-width: 480px) {
+              align-items: stretch;
+              display: flex;
+              flex-direction: column;
+              padding: 30px 15px;
+            }
+
             &:before {
                 width: 100%;
                 padding: 0 237px;
@@ -2054,6 +2060,10 @@ body {
                 -webkit-box-shadow: 0px 20px 120px 0px rgba(31,27,27,0.04);
                 -moz-box-shadow: 0px 20px 120px 0px rgba(31,27,27,0.04);
                 box-shadow: 0px 20px 120px 0px rgba(31,27,27,0.04);
+
+                @media screen and (max-width: 480px) {
+                  content: none;
+                }
             }
 
             /*&:after {
@@ -2077,10 +2087,22 @@ body {
             position: absolute;
             right: 600px;
 
+            @media screen and (max-width: 480px) {
+              height: 400px;
+              order: 2;
+              position: static;
+              width: auto;
+            }
+
             .ymap_item {
                 width: 775px;
                 height: 605px;
                 position: relative;
+
+                @media screen and (max-width: 480px) {
+                  height: 400px;
+                  width: 100%;
+                }
 
                 .y-map {
                     position: absolute;
@@ -2103,6 +2125,12 @@ body {
             float: right;
             position: relative;
             z-index: 1;
+
+            @media screen and (max-width: 480px) {
+              float: none;
+              height: auto;
+              width: auto;
+            }
 
             .title {
                 text-align: left;
@@ -2136,6 +2164,10 @@ body {
                         z-index: 1;
                         position: relative;
                         float: left;
+
+                        @media screen and (max-width: 480px) {
+                          padding: 0 5px;
+                        }
 
                         &:hover {
                             background: #f8eccb;
@@ -2205,17 +2237,38 @@ body {
     box-sizing: border-box;
     border-top: 1px solid rgba(33, 34, 39, .1);
     height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
 
+    @media screen and (max-width: 480px) {
+      height: auto;
+      padding: 25px 15px;
+    }
+
     .wrap_float {
+        display: grid;
         position: relative;
+
+        @media screen and (min-width: 480px) {
+          grid-template-columns: min-content repeat(2, 1fr) min-content;
+        }
+
+        @media screen and (max-width: 480px) {
+          gap: 15px;
+          grid-template-rows: repeat(4, 1fr);
+          justify-items: center;
+        }
     }
 
     &_left {
-        width: auto;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: auto;
+
+      @media screen and (max-width: 480px) {
+          flex-wrap: wrap;
+          margin-bottom: 15px;
+        }
 
         .footer_logo {
             width: 140px;
@@ -2232,6 +2285,10 @@ body {
             font-size: 13px;
             line-height: 1.4;
             margin-top: 6px;
+
+            @media screen and (max-width: 480px) {
+              width: auto;
+            }
         }
     }
 
@@ -2239,11 +2296,12 @@ body {
         margin-top: 4px;
         font-size: 13px;
         text-align: center;
-        width: 328px;
-        position: absolute;
-        left: 50%;
-        margin-left: -164px;
         line-height: 1.4;
+
+        @media screen and (max-width: 480px) {
+          margin: 0;
+          margin-bottom: 15px;
+        }
 
         p {
             margin-bottom: 6px;
@@ -2261,6 +2319,21 @@ body {
                 }
             }
         }
+    }
+
+    &_madeby {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      p {
+        margin-right: 10px;
+        width: auto;
+      }
+
+      img {
+        width: 140px;
+      }
     }
 
     &_right {

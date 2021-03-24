@@ -11,15 +11,21 @@
                        <p><a href="#policy" class="getModal">Политика конфиденциальности</a></p>
                        <p><?php the_field('footer_text', 'option'); ?></p>
                    </div>
+                   <div class="footer_madeby">
+                        <p>Разработано в:</p>
+                        <a href="https://mkt-lab.ru">
+                            <img src="https://static.tildacdn.com/tild3861-3434-4439-a366-316532613661/logo.png" alt="">
+                        </a>
+                   </div>
                    <div class="footer_right">
                        <div id="toTop">Наверх</div>
                    </div>
                </div>
            </div>
        </footer>
-       
+
     </div>
-    
+
     <div style="display: none;">
         <div class="modal modal_callback" id="callback">
             <div class="modal_wrap">
@@ -54,7 +60,7 @@
             <div class="modal_close"></div>
         </div>
     </div>
-    
+
     <div style="display: none;">
         <div class="modal modal_payment" id="payment">
             <div class="modal_wrap">
@@ -90,7 +96,7 @@
             <div class="modal_close"></div>
         </div>
     </div>
-    
+
     <div style="display: none;">
         <div class="modal modal_excursion" id="excursion">
             <div class="modal_wrap">
@@ -122,7 +128,7 @@
             <div class="modal_close"></div>
         </div>
     </div>
-    
+
     <div style="display: none;">
         <div class="modal modal_contract" id="contract">
             <div class="modal_wrap">
@@ -153,7 +159,7 @@
             <div class="modal_close"></div>
         </div>
     </div>
-    
+
     <div style="display: none;">
         <div class="modal modal_commercial" id="commercial">
             <div class="modal_wrap">
@@ -175,7 +181,7 @@
             <div class="modal_close"></div>
         </div>
     </div>
-    
+
     <div style="display: none;">
         <div class="modal modal_policy" id="policy">
             <div class="modal_wrap">
@@ -189,7 +195,7 @@
             <div class="modal_close"></div>
         </div>
     </div>
-    
+
     <div style="display: none;">
         <div class="modal modal_success" id="success">
             <div class="modal_wrap">
@@ -203,14 +209,14 @@
             <div class="modal_close"></div>
         </div>
     </div>
-    
-    
+
+
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/device.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.arcticmodal-0.3.min.js"></script>
-    
+
     <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.min.js"></script>
     <?php the_field('footer_metriks', 'option'); ?>
 </body>
