@@ -523,6 +523,11 @@ button:hover * {
   margin-bottom: 24px;
   line-height: 1.25;
 }
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+}
 .subtitle {
   font-size: 23px;
   text-align: center;
@@ -1094,6 +1099,17 @@ body .catalog_setion .title {
   background: #f8f9fa;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .advantages {
+    padding: 30px 15px;
+  }
+  .advantages #circle_1,
+  .advantages #circle_2,
+  .advantages #circle_3,
+  .advantages #circle_4 {
+    display: none;
+  }
+}
 .advantages #circle_1 {
   width: 860px;
   height: 860px;
@@ -1147,12 +1163,20 @@ body .catalog_setion .title {
   position: relative;
 }
 .advantages .section_content {
-  width: 1070px;
+  width: 100%;
   float: right;
   margin-top: 34px;
 }
+@media screen and (max-width: 480px) {
+  .advantages .section_content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .advantages img {
-  width: 1070px;
+  width: 100%;
   margin: 48px 0 43px;
   display: block;
   float: right;
@@ -1162,8 +1186,21 @@ body .catalog_setion .title {
 .advantages .title {
   margin-bottom: 40px;
 }
+@media screen and (max-width: 480px) {
+  .advantages .title br {
+    display: none;
+  }
+}
 .advantages_item {
   width: 460px;
+}
+@media screen and (max-width: 480px) {
+  .advantages_item {
+    width: 100%;
+  }
+  .advantages_item:not(:last-of-type) {
+    margin-bottom: 60px;
+  }
 }
 .advantages_item:nth-child(even) {
   float: right;
@@ -1199,6 +1236,13 @@ body .catalog_setion .title {
   -moz-box-shadow: 0px 20px 120px 0px rgba(31, 27, 27, 0.04);
   box-shadow: 0px 20px 120px 0px rgba(31, 27, 27, 0.04);
 }
+@media screen and (max-width: 480px) {
+  .advantages_item_title a .tooltip {
+    box-shadow: 0px 20px 120px 0px rgba(31, 27, 27, 0.15);
+    margin-left: 0;
+    left: 0;
+  }
+}
 .advantages_item_title a .tooltip:before {
   width: 0;
   height: 0;
@@ -1210,6 +1254,11 @@ body .catalog_setion .title {
   bottom: -10px;
   left: 50%;
   margin-left: -5px;
+}
+@media screen and (max-width: 480px) {
+  .advantages_item_title a .tooltip:before {
+    left: 15%;
+  }
 }
 .advantages_item_title a .tooltip .i {
   font-size: 15px;
@@ -1235,6 +1284,11 @@ body .catalog_setion .title {
 .advantages_item_title a.po .tooltip {
   bottom: 65px;
   margin-left: -100px;
+}
+@media screen and (max-width: 480px) {
+  .advantages_item_title a.po .tooltip {
+    margin-left: 0;
+  }
 }
 .advantages_item .advantages_ul li {
   font-size: 17px;
