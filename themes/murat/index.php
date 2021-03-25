@@ -25,7 +25,7 @@
                </div>
            </div>
        </header>
-       
+
        <section class="advantages">
            <div id="circle_1"></div>
            <div id="circle_2"></div>
@@ -100,7 +100,7 @@
                </div>
            </div>
        </section>
-       
+
        <section class="map">
            <div class="wrap">
                <div class="wrap_float">
@@ -138,7 +138,7 @@
                </div>
            </div>
        </section>
-       
+
        <section class="production">
            <div class="wrap">
                <div class="wrap_float">
@@ -176,7 +176,7 @@
                </div>
            </div>
        </section>
-       
+
        <section class="section_form">
            <div class="wrap">
                <div class="wrap_float">
@@ -218,7 +218,7 @@
                </div>
            </div>
        </section>
-       
+
        <section class="scheme">
            <div class="wrap">
                <div class="wrap_float">
@@ -231,17 +231,17 @@
                            <li data-num="01">
                                <?php the_field('scheme_li_1', 'option'); ?>
                            </li>
-                           <li data-num="04">
-                               <?php the_field('scheme_li_2', 'option'); ?>
-                           </li>
                            <li data-num="02">
                                <?php the_field('scheme_li_3', 'option'); ?>
                            </li>
-                           <li data-num="05">
-                               <?php the_field('scheme_li_4', 'option'); ?>
-                           </li>
                            <li data-num="03">
                                <?php the_field('scheme_li_5', 'option'); ?>
+                           </li>
+                           <li data-num="04">
+                               <?php the_field('scheme_li_2', 'option'); ?>
+                           </li>
+                           <li data-num="05">
+                               <?php the_field('scheme_li_4', 'option'); ?>
                            </li>
                            <li data-num="06">
                                <?php the_field('scheme_li_6', 'option'); ?>
@@ -251,7 +251,7 @@
                </div>
            </div>
        </section>
-       
+
        <section class="ymap_block">
            <div class="wrap">
                <div class="wrap_float">
@@ -303,7 +303,7 @@
            </div>
        </section>
         <style>.footer{border-top: 0;}</style>
-        
+
         <div style="display: none;">
         <div class="modal modal_catalog" id="catalog">
             <div class="modal_wrap">

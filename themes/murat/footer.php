@@ -14,7 +14,7 @@
                    <div class="footer_madeby">
                         <p>Разработано в:</p>
                         <a href="https://mkt-lab.ru">
-                            <img src="https://static.tildacdn.com/tild3861-3434-4439-a366-316532613661/logo.png" alt="">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/img/mktlab-logo.png" alt="">
                         </a>
                    </div>
                    <div class="footer_right">
