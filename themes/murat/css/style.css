@@ -1451,6 +1451,9 @@ body .catalog_setion .title {
     box-sizing: border-box;
     padding: 34px 15px 60px;
   }
+  .production * {
+    box-sizing: border-box;
+  }
 }
 .production .section_content {
   margin: 20px 0;
@@ -1469,9 +1472,13 @@ body .catalog_setion .title {
 @media screen and (max-width: 480px) {
   .production_item {
     margin-right: 0;
+    padding: 0 10px;
   }
   .production_item:not(:last-of-type) {
     margin-bottom: 40px;
+  }
+  .production_item:first-of-type {
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 480px) {

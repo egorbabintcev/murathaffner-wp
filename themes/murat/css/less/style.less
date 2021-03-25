@@ -1565,6 +1565,10 @@ body {
     @media screen and (max-width: 480px) {
       box-sizing: border-box;
       padding: 34px 15px 60px;
+
+      * {
+        box-sizing: border-box;
+      }
     }
 
     .section_content {
@@ -1583,9 +1587,14 @@ body {
 
         @media screen and (max-width: 480px) {
           margin-right: 0;
+          padding: 0 10px;
 
           &:not(:last-of-type) {
             margin-bottom: 40px;
+          }
+
+          &:first-of-type {
+            padding-left: 0;
           }
         }
 
