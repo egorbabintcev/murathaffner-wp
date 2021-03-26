@@ -1460,9 +1460,7 @@ body .catalog_setion .title {
 }
 @media screen and (max-width: 480px) {
   .production .section_content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    margin-left: -40px;
   }
 }
 .production_item {
