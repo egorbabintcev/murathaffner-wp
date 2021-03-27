@@ -28,7 +28,12 @@ $(document).ready(function(){
       }
     );
 
-
+    //mobile navigation toggler
+    $(".header_top_toggler").on('click', function() {
+      $(this).find('svg').toggleClass('active')
+      $(this).siblings('.header_menu').fadeToggle()
+      $('body').toggleClass('is-locked')
+    })
 
      //Modals
     $('a.getModal').on('click', function(e){
