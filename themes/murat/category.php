@@ -18,7 +18,7 @@
                </div>
            </div>
        </header>
-       
+
        <section class="catalog_section catalog">
            <div class="wrap">
                <div class="wrap_float">
@@ -27,16 +27,16 @@
                    </div>
                    <div class="section_content">
                        <div class="content_wrap">
-                           <div class="tab_content archive" id="c-content1" style="display: block;">
-                             
-                               
-                               
-                               
+                           <div class="tab_content archive" id="c-content1">
+
+
+
+
                               <?php	query_posts('cat='.$c_id);
                                  while (have_posts()) : the_post();?>
                                  <a href="<?php the_permalink(); ?>" class="catalog_item">
                                        <div class="catalog_item_img">
-                                           <?php 
+                                           <?php
                                            $image = get_field('single_img_min');
                                             $size = 'medium';
                                            ?>
@@ -51,7 +51,7 @@
                                     endwhile;
                                     wp_reset_query();
                                     ?>
-                               
+
                            </div>
                        </div>
                    </div>

@@ -86,14 +86,18 @@ $(document).ready(function(){
 
 
     //max height item card
-    var mh = 0;
-   $(".content_wrap .js-c-content").each(function () {
-       var h_block = $(this).innerHeight();
-       if(h_block > mh) {
-          mh = h_block;
-       };
-   });
-   $(".c-content").height(mh);
+   if (window.matchMedia('screen and (min-width: 480px)').matches) {
+      var mh = 0;
+      $(".content_wrap .js-c-content").each(function () {
+          var h_block = $(this).innerHeight();
+          if(h_block > mh) {
+            mh = h_block;
+          };
+      });
+      $(".c-content").height(mh);
+   } else {
+
+   }
 
 
     //max height catalog
@@ -145,12 +149,18 @@ $(document).ready(function(){
     //item card tabs
     $('.js-tab-item').click(function(e) {
         e.preventDefault();
-
         $('.js-tab-item').removeClass('active');
         $(this).addClass('active');
         var tab = $(this).attr('href');
-        $('.content_wrap .c-content').not(tab).hide();
-        $(tab).fadeIn();
+
+        if (window.matchMedia('screen and (min-width: 480px)').matches) {
+          $('.content_wrap .c-content').not(tab).hide();
+          $(tab).fadeIn();
+        } else {
+          $('html, body').animate({
+            scrollTop: $(tab).offset().top,
+          })
+        }
     });
 
     //left tabs

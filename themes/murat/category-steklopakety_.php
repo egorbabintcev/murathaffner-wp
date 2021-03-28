@@ -7,7 +7,7 @@
                </div>
            </div>
        </header>
-       
+
        <section class="catalog_section catalog">
            <div class="wrap">
                <div class="wrap_float">
@@ -26,8 +26,8 @@
                            </div>
                        </div>
                        <div class="content_wrap">
-                           
-                           <div class="tab_content" id="c-content3" style="display: block;">
+
+                           <div class="tab_content" id="c-content3">
                                <?php
                                 $categories = get_categories(array(
                                     'orderby' => 'ID',

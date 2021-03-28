@@ -1,5 +1,5 @@
 <?php get_header() ?>
-  <?php 
+  <?php
        $categories = get_the_category();
         $category_id = $categories[0]->cat_ID;
         $category_name = $categories[0]->name;
@@ -14,7 +14,7 @@
                </div>
            </div>
        </header>
-       
+
        <section class="catalog_content">
            <div class="wrap">
                <div class="wrap_float">
@@ -26,7 +26,7 @@
                            <div class="slider_for">
                                <?php if ( $slider_list = get_field('slider_list') ) : ?>
                                     <?php foreach ($slider_list as $el) : ?>
-                                      <?php 
+                                      <?php
                                        $image = $el['slide_img'];;
                                         $size = 'thumbnail';
                                        ?>
@@ -39,7 +39,7 @@
                            <div class="slider_nav">
                                <?php if ( $slider_list = get_field('slider_list') ) : ?>
                                     <?php foreach ($slider_list as $el) : ?>
-                                      <?php 
+                                      <?php
                                        $image = $el['slide_img'];;
                                         $size = 'thumbnail';
                                        ?>
@@ -115,7 +115,7 @@
                                 </div>
                                 <style>
                                     .catalog_content .catalog_bottom .content_wrap .c-content {
-                                        min-height: 600px;
+                                        /* min-height: 600px; */
                                     }
                                 </style>
                             <?php endif; ?>
@@ -124,7 +124,7 @@
                </div>
            </div>
        </section>
-       
+
        <section class="section_form" id="section_form">
            <div class="wrap">
                <div class="wrap_float">
@@ -133,10 +133,10 @@
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div> 
+                        </div>
                         <p>
                             посмотреть содержание
-                        </p>  
+                        </p>
                    </a>
                    <img src="<?php echo get_template_directory_uri(); ?>/img/book.png" alt="">
                    <div class="form_div">
@@ -176,9 +176,9 @@
                </div>
            </div>
        </section>
-       
-        <style>.section_form{margin-bottom: 110px;}</style>
-        
+
+        <style>@media screen and (min-width: 480px){.section_form{margin-bottom: 110px;}}</style>
+
         <div style="display: none;">
         <div class="modal modal_ask" id="ask">
             <div class="modal_wrap">
@@ -213,6 +213,6 @@
             <div class="modal_close"></div>
         </div>
     </div>
-    
+
     <?php endwhile; ?>
 <?php get_footer() ?>
