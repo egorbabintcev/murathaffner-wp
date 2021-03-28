@@ -246,7 +246,20 @@ $(document).ready(function(){
         touchMove: false,
         draggable: false,
         autoplay: false,
-        autoplaySpeed: 4000
+        autoplaySpeed: 4000,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              draggable: true,
+              swipe: true,
+              touchMove: true,
+              arrows: false,
+            }
+          }
+        ]
     });
 
     //commercial btn

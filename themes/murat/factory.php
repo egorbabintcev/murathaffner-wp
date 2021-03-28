@@ -9,7 +9,7 @@ Template Name: factory
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1300">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title('|', true, 'right'); ?></title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <?php wp_head(); ?>
@@ -32,6 +32,13 @@ Template Name: factory
                                 <a href="" class="a_num js_num"><?php the_field('header_tel', 'option'); ?></a>
                                 <a href="#callback" class="a_modal getModal">Заказать звонок</a>
                             </div>
+                        </div>
+                        <div class="header_top_toggler">
+                          <svg class="ham hamRotate ham1" viewBox="12 12 75 75">
+                            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+                            <path class="line middle" d="m 30,50 h 40"></path>
+                            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+                          </svg>
                         </div>
                         <ul class="header_menu">
                             <li><a href="<?php echo get_home_url(); ?>">Главная</a></li>
@@ -59,7 +66,7 @@ Template Name: factory
                </div>
            </div>
        </header>
-       
+
        <section class="company">
            <div class="wrap">
                <div class="wrap_float">
@@ -77,7 +84,7 @@ Template Name: factory
                </div>
            </div>
        </section>
-       
+
        <section class="storage photos">
            <div class="wrap">
                <div class="wrap_float">
@@ -115,7 +122,7 @@ Template Name: factory
                                <?php $_images = get_field('photos_list'); ?>
                                <?php if ( $_images ) : ?>
                                     <?php foreach ($_images as $el) : ?>
-                                      <?php 
+                                      <?php
                                             $image = $el['photo_img'];
                                        ?>
                                        <a href="#s-content-<?php echo $image['id']; ?>" class="storage_tab js-storage_tab"><?=$el['photo_title'];?></a>
@@ -127,7 +134,7 @@ Template Name: factory
                            <?php $_images = get_field('photos_list'); ?>
                            <?php if ( $_images ) : ?>
                                 <?php foreach ($_images as $el) : ?>
-                                  <?php 
+                                  <?php
                                         $image = $el['photo_img'];
                                    ?>
                                    <div class="storage_content" id="s-content-<?php echo $image['id']; ?>">
@@ -140,7 +147,7 @@ Template Name: factory
                </div>
            </div>
        </section>
-       
+
        <section class="certificates">
            <div class="wrap">
                <div class="wrap_float">
@@ -156,7 +163,7 @@ Template Name: factory
                         <div class="certificates_slider" id="certificates_slider">
                             <?php if ( $certificates_list = get_field('certificates_list') ) : ?>
                                 <?php foreach ($certificates_list as $el) : ?>
-                                    <?php 
+                                    <?php
                                         $image = $el['certificate_img'];
                                     ?>
                                     <div class="certificates_item">
@@ -171,7 +178,7 @@ Template Name: factory
                </div>
            </div>
        </section>
-       
+
        <section class="partners">
            <div class="wrap">
                <div class="wrap_float">
@@ -182,7 +189,7 @@ Template Name: factory
                    <div class="section_content">
                        <?php if ( $partners_list = get_field('partners_list') ) : ?>
                             <?php foreach ($partners_list as $el) : ?>
-                                <?php 
+                                <?php
                                         $image = $el['partners_logo'];
                                     ?>
                                 <div class="partners_item">
