@@ -710,10 +710,16 @@ body {
 
   .payment_scheme {
     padding-top: 60px;
+
+    @media screen and (max-width: 480px) {
+      padding-top: 40px;
+    }
   }
 
   .payment_scheme .section_content {
-    margin-right: 28px;
+    @media screen and (min-width: 480px) {
+      margin-right: 28px;
+    }
   }
 
   .service {
@@ -4307,6 +4313,13 @@ body {
   padding-top: 105px;
   padding-bottom: 106px;
 
+  @media screen and (max-width: 480px) {
+    box-sizing: border-box;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   #circle_1 {
     width: 860px;
     height: 860px;
@@ -4317,6 +4330,10 @@ body {
     top: 50%;
     left: -90px;
     margin-top: -430px;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   #circle_2 {
@@ -4329,6 +4346,10 @@ body {
     top: 50%;
     left: 10px;
     margin-top: -330px;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   #circle_3 {
@@ -4341,6 +4362,10 @@ body {
     top: 50%;
     left: 110px;
     margin-top: -230px;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   #circle_4 {
@@ -4353,6 +4378,10 @@ body {
     top: 50%;
     left: 210px;
     margin-top: -130px;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   .wrap_float {
@@ -4367,11 +4396,19 @@ body {
 
   .section_content {
     margin-top: 54px;
+
+    @media screen and (max-width: 480px) {
+      margin-top: 27px;
+    }
   }
 
   &_left {
     width: 600px;
     position: relative;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
 
     img {
       width: 580px;
@@ -4382,16 +4419,21 @@ body {
   }
 
   &_right {
-    width: 470px;
-    margin-right: 100px;
-    float: right;
+    @media screen and (min-width: 480px) {
+      width: 470px;
+      margin-right: 100px;
+      float: right;
+    }
 
     li {
-      padding-left: 30px;
       box-sizing: border-box;
+      padding-left: 30px;
       position: relative;
-      margin-left: 60px;
       margin-bottom: 40px;
+
+      @media screen and (min-width: 480px) {
+        margin-left: 60px;
+      }
 
       .btn {
         width: 270px;
@@ -4479,6 +4521,13 @@ body {
   padding-top: 47px;
   padding-bottom: 140px;
 
+  @media screen and (max-width: 480px) {
+    box-sizing: border-box;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .wrap_float {
     position: relative;
     z-index: 1;
@@ -4487,6 +4536,10 @@ body {
   .section_content {
     padding-top: 120px;
     box-sizing: border-box;
+
+    @media screen and (max-width: 480px) {
+      padding-top: 0;
+    }
   }
 
   &:before {
@@ -4500,10 +4553,16 @@ body {
     border-top-left-radius: 245px;
     border-bottom-left-radius: 245px;
     top: 30%;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   &_left {
-    width: 385px;
+    @media screen and (min-width: 480px) {
+      width: 385px;
+    }
   }
 
   img {
@@ -4512,12 +4571,24 @@ body {
     left: 50%;
     margin-left: 70px;
     top: 25%;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   &_item {
     font-size: 17px;
     line-height: 1.6;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 30px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
 
     a.link {
       font-size: 15px;
@@ -4553,8 +4624,23 @@ body {
   padding-bottom: 110px;
   padding-top: 25px;
 
+  @media screen and (max-width: 480px) {
+    box-sizing: border-box;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+
   .section_content {
     margin-top: 54px;
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+      margin-top: 15px;
+      overflow-x: scroll;
+      padding-bottom: 12px;
+    }
   }
 
   &_item {
@@ -4568,6 +4654,14 @@ body {
     display: inline-block;
     float: none;
     position: relative;
+
+    @media screen and (max-width: 480px) {
+      margin: 0 15px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
 
     &:before {
       background: rgba(34, 35, 40, 0.5);
@@ -4988,7 +5082,10 @@ body {
 
   &.modal_certificate {
     padding: 0;
-    width: 600px;
+
+    @media screen and (min-width: 480px) {
+      width: 600px;
+    }
 
     img {
       max-width: 100%;
