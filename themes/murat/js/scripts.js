@@ -170,7 +170,8 @@ $(document).ready(function(){
         $('.storage_left .js-storage_tab').removeClass('active');
         $(this).addClass('active');
         var tab = $(this).attr('href');
-        $('.storage_right .storage_content').not(tab).hide();
+        const slideClass = window.matchMedia('screen and (max-width: 480px)').matches ? ':not(.is-spares)' : '';
+        $(`.storage_right .storage_content${slideClass}`).not(tab).hide();
         $(tab).fadeIn();
     });
 

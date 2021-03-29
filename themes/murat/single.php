@@ -6,7 +6,7 @@
         $category_link = get_category_link( $categories[0]->term_id );
        ?>
    <?php while (have_posts()) : the_post(); $post_id = get_the_ID(); ?>
-        <div class="header_main header_page">
+        <div class="header_main header_page header_single">
                <div class="wrap">
                    <div class="wrap_float">
                        <p class="main_title"><?php the_field('item_card_title'); ?></p>

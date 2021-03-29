@@ -14,7 +14,7 @@ Template Name: guarantee
                </div>
            </div>
        </header>
-       
+
        <section class="service">
            <div class="wrap">
                <div class="wrap_float">
@@ -43,7 +43,7 @@ Template Name: guarantee
                </div>
            </div>
        </section>
-       
+
        <section class="support">
            <div class="wrap">
                <div class="wrap_float">
@@ -90,7 +90,7 @@ Template Name: guarantee
                </div>
            </div>
        </section>
-       
+
        <section class="storage">
            <div class="wrap">
                <div class="wrap_float">
@@ -108,7 +108,7 @@ Template Name: guarantee
                                <?php $_images = get_field('storage_ul'); ?>
                                <?php if ( $_images ) : ?>
                                     <?php foreach ($_images as $el) : ?>
-                                      <?php 
+                                      <?php
                                             $image = $el['storage_img'];
                                        ?>
                                        <a href="#s-content-<?php echo $image['id']; ?>" class="storage_tab js-storage_tab"><?=$el['storage_li'];?></a>
@@ -125,7 +125,7 @@ Template Name: guarantee
                            <?php $_images = get_field('storage_ul'); ?>
                            <?php if ( $_images ) : ?>
                                 <?php foreach ($_images as $el) : ?>
-                                  <?php 
+                                  <?php
                                         $image = $el['storage_img'];
                                    ?>
                                    <div class="storage_content" id="s-content-<?php echo $image['id']; ?>">
@@ -133,7 +133,7 @@ Template Name: guarantee
                                    </div>
                                 <?php endforeach; ?>
                             <?php endif; ?>
-                           <div class="storage_content list" id="s-content-4">
+                           <div class="storage_content list is-spares" id="s-content-4">
                                <ul>
                                    <?php if ( $storage_list = get_field('storage_list') ) : ?>
                                         <?php foreach ($storage_list as $el) : ?>
@@ -147,6 +147,6 @@ Template Name: guarantee
                </div>
            </div>
        </section>
-       
+
         <style>.storage{margin-bottom: 110px;}</style>
 <?php get_footer() ?>
