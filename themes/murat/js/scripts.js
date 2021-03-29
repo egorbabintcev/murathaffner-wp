@@ -86,18 +86,18 @@ $(document).ready(function(){
 
 
     //max height item card
-   if (window.matchMedia('screen and (min-width: 480px)').matches) {
-      var mh = 0;
-      $(".content_wrap .js-c-content").each(function () {
-          var h_block = $(this).innerHeight();
-          if(h_block > mh) {
-            mh = h_block;
-          };
-      });
-      $(".c-content").height(mh);
-   } else {
+  //  if (window.matchMedia('screen and (min-width: 480px)').matches) {
+  //     var mh = 0;
+  //     $(".content_wrap .js-c-content").each(function () {
+  //         var h_block = $(this).innerHeight();
+  //         if(h_block > mh) {
+  //           mh = h_block;
+  //         };
+  //     });
+  //     $(".c-content").height(mh);
+  //  } else {
 
-   }
+  //  }
 
 
     //max height catalog

@@ -2048,6 +2048,57 @@ body {
         font-size: 21px;
         text-align: left;
         line-height: 1.4;
+
+        @media screen and (min-width: 480px) {
+          &.mobile_only {
+            display: none;
+          }
+        }
+      }
+
+      ul {
+        text-align: left;
+        display: inline-block;
+        float: none;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 480px) {
+          display: none;
+        }
+
+        li {
+          position: relative;
+          padding-left: 18px;
+          box-sizing: border-box;
+          font-size: 17px;
+          margin-bottom: 19px;
+
+          &:before {
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 6px;
+            background: rgb(248, 207, 93); /* Old browsers */
+            background: -moz-linear-gradient(
+              top,
+              rgba(248, 207, 93, 1) 0%,
+              rgba(253, 154, 25, 1) 100%
+            ); /* FF3.6-15 */
+            background: -webkit-linear-gradient(
+              top,
+              rgba(248, 207, 93, 1) 0%,
+              rgba(253, 154, 25, 1) 100%
+            ); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(
+              to bottom,
+              rgba(248, 207, 93, 1) 0%,
+              rgba(253, 154, 25, 1) 100%
+            ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8cf5d', endColorstr='#fd9a19',GradientType=0 ); /* IE6-9 */
+          }
+        }
       }
 
       .form {
@@ -3435,6 +3486,10 @@ body {
             border: 1px solid rgba(255, 255, 255, 0.15);
             box-sizing: border-box;
             transition: all 0.2s ease;
+
+            @media screen and (max-width: 480px) {
+              transform: scale(0.75);
+            }
 
             &:hover {
               cursor: pointer;

@@ -1785,6 +1785,47 @@ body .catalog_setion .title {
   text-align: left;
   line-height: 1.4;
 }
+@media screen and (min-width: 480px) {
+  .section_form .wrap_float .form_div .subtitle.mobile_only {
+    display: none;
+  }
+}
+.section_form .wrap_float .form_div ul {
+  text-align: left;
+  display: inline-block;
+  float: none;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .section_form .wrap_float .form_div ul {
+    display: none;
+  }
+}
+.section_form .wrap_float .form_div ul li {
+  position: relative;
+  padding-left: 18px;
+  box-sizing: border-box;
+  font-size: 17px;
+  margin-bottom: 19px;
+}
+.section_form .wrap_float .form_div ul li:before {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 6px;
+  background: #f8cf5d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f8cf5d 0%, #fd9a19 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f8cf5d 0%, #fd9a19 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f8cf5d 0%, #fd9a19 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8cf5d', endColorstr='#fd9a19', GradientType=0);
+  /* IE6-9 */
+}
 .section_form .wrap_float .form_div .form {
   margin-top: 8px;
 }
@@ -3007,6 +3048,11 @@ body .catalog_setion .title {
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-sizing: border-box;
   transition: all 0.2s ease;
+}
+@media screen and (max-width: 480px) {
+  .catalog_content .catalog_bottom .content_wrap .c-content .video .video_btn {
+    transform: scale(0.75);
+  }
 }
 .catalog_content .catalog_bottom .content_wrap .c-content .video .video_btn:hover {
   cursor: pointer;
