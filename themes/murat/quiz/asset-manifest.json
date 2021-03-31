@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/wp-content/themes/murat/quiz/static/css/main.d4731d51.chunk.css",
+    "main.js": "/wp-content/themes/murat/quiz/static/js/main.b834ed49.chunk.js",
+    "main.js.map": "/wp-content/themes/murat/quiz/static/js/main.b834ed49.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/murat/quiz/static/js/runtime-main.b70e0bd4.js",
+    "runtime-main.js.map": "/wp-content/themes/murat/quiz/static/js/runtime-main.b70e0bd4.js.map",
+    "static/js/2.6e120f76.chunk.js": "/wp-content/themes/murat/quiz/static/js/2.6e120f76.chunk.js",
+    "static/js/2.6e120f76.chunk.js.map": "/wp-content/themes/murat/quiz/static/js/2.6e120f76.chunk.js.map",
+    "index.html": "/wp-content/themes/murat/quiz/index.html",
+    "static/css/main.d4731d51.chunk.css.map": "/wp-content/themes/murat/quiz/static/css/main.d4731d51.chunk.css.map",
+    "static/js/2.6e120f76.chunk.js.LICENSE.txt": "/wp-content/themes/murat/quiz/static/js/2.6e120f76.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/wp-content/themes/murat/quiz/static/media/MuseoSansCyrl-900Italic.fcfb8b1f.ttf",
+    "static/media/arrow.bdece24f.svg": "/wp-content/themes/murat/quiz/static/media/arrow.bdece24f.svg",
+    "static/media/avatar.8a901a86.png": "/wp-content/themes/murat/quiz/static/media/avatar.8a901a86.png",
+    "static/media/gloves.8e006c59.png": "/wp-content/themes/murat/quiz/static/media/gloves.8e006c59.png",
+    "static/media/prices.81eacad3.png": "/wp-content/themes/murat/quiz/static/media/prices.81eacad3.png",
+    "static/media/social-icons.7bed4360.svg": "/wp-content/themes/murat/quiz/static/media/social-icons.7bed4360.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b70e0bd4.js",
+    "static/js/2.6e120f76.chunk.js",
+    "static/css/main.d4731d51.chunk.css",
+    "static/js/main.b834ed49.chunk.js"
+  ]
+}

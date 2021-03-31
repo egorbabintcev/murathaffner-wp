@@ -5090,6 +5090,26 @@ body {
   }
 }
 
+.quiz {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (max-width: 480px) {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 768px;
+
+    @media screen and (max-width: 480px) {
+      height: 720px;
+    }
+  }
+}
+
 .modal {
   width: 650px;
   outline: 10px solid #48494e;
